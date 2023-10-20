@@ -1,0 +1,157 @@
+.quote_rectangle {
+  background-color: rgba(66, 62, 62, 0.5);
+  padding: 20px;
+  height: 183px;
+  width: 453px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  @include mediaMobile {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.quote_rectangle--first {
+  margin-left: 146px;
+  @include mediaMobile {
+    margin-left: 0;
+    height: 147px;
+    width: 290px;
+  }
+
+  @include mediaDesktop {
+    margin-left: 0;
+  }
+}
+
+.quote_rectangle--second {
+  width: 454px;
+  height: 205px;
+  @include mediaMobile {
+    margin-left: 0;
+    height: 147px;
+    width: 290px;
+  }
+}
+
+.quote_rectangle--third {
+  width: 454px;
+  margin-left: 106px;
+  height: 205px;
+
+  @include mediaMobile {
+    margin-left: 0;
+    height: 147px;
+    width: 290px;
+  }
+
+  @include mediaDesktop {
+    margin-left: 0;
+  }
+}
+
+.quote_rectangle__header {
+  min-height: 70px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px auto 20px;
+  align-items: center;
+  @include mediaMobile {
+    min-height: 50px;
+  }
+}
+
+.quote_rectangle__images {
+  width: auto;
+  align-items: center;
+}
+
+.photo {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.ellipse {
+  position: absolute;
+  left: 9px;
+  top: 3px;
+}
+
+.pesonal_user_data {
+  padding-left: 22px;
+  @include mediaMobile {
+    padding-left: 0;
+  }
+}
+
+.user-name {
+  font-family: $font-base;
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+  @include mediaMobile {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.user-profession {
+  font-family: $font-sub;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 50%;
+  @include mediaMobile {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.user-quote {
+  margin-top: 23px;
+  font-family: $font-sub;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: left;
+  @include mediaMobile {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    line-height: 16px;
+  }
+}
+
+.user-date {
+  padding-top: 10px;
+  font-family: $font-sub;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+  text-align: left;
+  opacity: 50%;
+}
+
+.twitter_logo {
+  margin-top: -24px;
+}
+
+.photo,
+.ellipse {
+  width: 44px;
+  height: 44px;
+}

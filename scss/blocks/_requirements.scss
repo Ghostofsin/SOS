@@ -1,0 +1,103 @@
+.requirements-section {
+  width: 100%;
+  height: 1000px;
+
+  background: radial-gradient(#ffffff00 0.5%, #00000000 0.5%, #000 60%),
+    url("../../img/bg-images/bg_requirements.png");
+  // background-color: #000;
+  opacity: 90%;
+  background-size: cover;
+  background-position: center center;
+
+  @include mediaMobile {
+    height: 719px;
+    background-position: center bottom;
+  }
+}
+
+.sub-title--requirements {
+  padding-top: 145px;
+
+  @include mediaMobile {
+    padding-top: 68px;
+  }
+}
+
+.title--requirements {
+  padding-top: 9px;
+}
+
+.requirements-grid {
+  @include mediaMobile {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.div__table {
+  @include mediaMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+  }
+}
+
+.table {
+  margin-top: 145px;
+  padding: 20px;
+  border-collapse: collapse;
+  border: 1px solid $white;
+
+  th,
+  td {
+    padding: 15px;
+    border: 1px solid $white;
+  }
+
+  @include mediaMobile {
+    width: fit-content;
+    margin-top: 40px;
+  }
+}
+
+.parameter {
+  font-family: $font-base;
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: left;
+
+  @include mediaMobile {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.parameter-description {
+  padding-top: 6.5px;
+  padding-bottom: 25px;
+  font-family: $font-sub;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  @include mediaMobile {
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 0px;
+  }
+}
+.parameter-description--padding {
+  padding-bottom: 50px;
+  @include mediaMobile {
+    padding-bottom: 0px;
+  }
+}

@@ -1,0 +1,65 @@
+.quotes-section {
+  width: 100%;
+  height: 1000px;
+
+  background: radial-gradient(#ffffff00 0.5%, #00000000 0.5%, #000 60%),
+    url("../../img/bg-images/bg_image_quotes.png");
+  background-color: #000;
+  opacity: 90%;
+  background-size: cover;
+  background-position: center center;
+
+  @include mediaMobile {
+    height: 834px;
+  }
+}
+
+.quotes-grid {
+  padding-top: 160px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  @include mediaMobile {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    padding-top: 37px;
+  }
+}
+
+.sub-title--quotes {
+  padding-top: 144px;
+  text-align: left;
+
+  @include mediaMobile {
+    padding-top: 0;
+  }
+}
+
+.title--quotes {
+  padding-top: 9px;
+  text-align: left;
+}
+
+.description--quotes {
+  padding-top: 45px;
+  width: 435px;
+  @include mediaMobile {
+    padding-top: 25px;
+    text-align: justify;
+    width: 295px;
+  }
+}
+
+.btn--qoutes {
+  margin-top: 53px;
+  @include mediaMobile {
+    margin-top: 23px;
+    margin-bottom: 30px;
+  }
+}
+
+.container--quotes {
+  display: flex;
+  justify-content: center;
+}

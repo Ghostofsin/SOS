@@ -1,0 +1,142 @@
+.features-section {
+  width: 100%;
+  height: 1100px;
+
+  background: radial-gradient(#ffffff00, #00000000, #04050685, #000 70%),
+    url("../../img/bg-images/bg_fearures.png");
+  background-color: #000;
+  opacity: 90%;
+  background-size: cover;
+  background-position: center center;
+
+  @include mediaMobile {
+    height: 515px;
+  }
+}
+.vector_img {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+.vector {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.title--features {
+  padding: 0;
+  text-align: left;
+
+  @include mediaMobile {
+    padding-left: 40px;
+  }
+}
+
+.info-block {
+  position: relative;
+}
+
+.sub-title--features {
+  padding-top: 0;
+  text-align: left;
+
+  @include mediaMobile {
+    padding-left: 40px;
+  }
+}
+
+.description--features {
+  padding-top: 72px;
+  height: 175px;
+  font-family: $font-sub;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justify;
+
+  @include mediaMobile {
+    padding-top: 0;
+  }
+}
+
+.feature-grid {
+  padding-top: 168px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include mediaMobile {
+    padding-top: 82px;
+    grid-template-columns: 1fr;
+    margin-left: 60px;
+  }
+}
+
+.features__list {
+}
+
+.features__list-item {
+  position: relative;
+  padding-left: 32px;
+  max-width: 405px;
+  padding-top: 32px;
+  font-family: $font-base;
+  color: $orange;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 2px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transform: translateY(50%);
+  }
+
+  @include mediaMobile {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}
+
+.features__list-item--empty {
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 2px solid $white;
+    border-width: 2px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transform: translateY(50%);
+  }
+}
+
+.item-description {
+  padding-left: 32px;
+  max-width: 405px;
+  padding-top: 5px;
+  font-family: $font-sub;
+  color: $white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: justified;
+
+  @include mediaMobile {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
